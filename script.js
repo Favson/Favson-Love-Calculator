@@ -1,4 +1,5 @@
 songToPlay = new Audio("audios/SongD.mp3")
+songToPlay2 = new Audio("audios/Chidinma-Fallen-in-love.m4a")
 
 // console.log(myLoveCal);
 function testLove(){
@@ -15,7 +16,9 @@ function testLove(){
             errMsg.style.display = 'none'
         }, 1500);
         
-    }else if (firstInput == 'jesutofunmi' || secondInput == 'favour' || firstInput == 'tofunmi' || firstInput == 'bolaji jesutofunmi' || firstInput == 'bolaji tofunmi' || firstInput == 'jesutofunmi bolaji' || firstInput == 'tofunmi bolaji' || secondInput == 'adebisi favour' || secondInput == 'favour adebisi' || firstInput == "favour" || firstInput == 'favour adebisi' || firstInput == 'adebisi favour' || secondInput == 'tofunmi' || secondInput=='bolaji jesutofunmi'|| secondInput== 'jesutofunmi' || secondInput == 'jesutofunmi bolaji' || firstInput == 'boluwatife' || secondInput == "timileyin"){
+    }else if ((firstInput == 'jesutofunmi' || firstInput == 'tofunmi' || firstInput == 'bolaji jesutofunmi' || firstInput == 'bolaji tofunmi' || firstInput == 'jesutofunmi bolaji' || firstInput == 'tofunmi bolaji' || firstInput == 'favour adebisi' || firstInput == "favour" || firstInput == 'adebisi favour' || firstInput == 'boluwatife') && (secondInput == 'tofunmi' ||secondInput == 'favour' || secondInput == 'adebisi favour' || secondInput == 'favour adebisi' ||secondInput=='bolaji jesutofunmi'|| secondInput== 'jesutofunmi' || secondInput == 'jesutofunmi bolaji' || secondInput == "timileyin")){
+        songToPlay2.play()
+        songToPlay.pause()
         imagesDiv.style.display = 'none'
         imagesDivShow.innerHTML = `
             <div class="" id="cardi2">
@@ -34,6 +37,7 @@ function testLove(){
             displayLove.innerHTML = `<h3>${calLove}</h3>
                 <p style="white">You better commot from this your so call relationship, e no better for you ooo!!!</p>
             `
+            songToPlay2.pause()
             songToPlay.play()
         }else if (loveCal == 31 || loveCal <=50){
             displayLove.innerHTML = `<h3>${calLove}</h3>
