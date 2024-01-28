@@ -1,14 +1,18 @@
 body{
-    background-image: url(image/pexels-tuấn-kiệt-jr-1382732.jpg);
+    background-image: url(image/23294.jpg);
     /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.inputDiv{
+  margin-top: -30px;
+}
+
 #cardi {
     --background: linear-gradient(to left, coral 0%, #ea5358 100%);
-    width:8%;
-    height: 110px;
+    width:9%;
+    height: 120px;
     padding: 5px;
     border-radius: 12rem;
     background: var(--background);
@@ -16,16 +20,17 @@ body{
 }
 
 .cardiImage{
-    border-radius: 120rem; width:100%; height:110px
+    border-radius: 120rem; width:100%; height:120px
 }
 
 #imagesDiv{
-    position: relative; margin-bottom:120px
+    position: relative;
+    margin-bottom:150px;
 }
 #cardii{
     --background: linear-gradient(to left, coral 0%, #ea5358 100%);
-    width:8%;
-    height: 110px;
+    width:9%;
+    height: 120px;
     padding: 5px;
     border-radius: 12rem;
     background: var(--background);
@@ -49,6 +54,7 @@ body{
     cursor: pointer;
     border: none;
     width: 35%;
+    margin-bottom: 30px;
 }
 
 .buttonTest:hover{
@@ -388,7 +394,7 @@ body{
     }
 
     body{
-        background-image: url(/image/pexels-asad-photo-maldives-1024975.jpg);
+        background-image: url(image/alexander-grey-J3m69BAg30s-unsplash.jpg);
         background-size: 80rem;
         /* background-size: cover; */
         background-position-y: center;
@@ -424,14 +430,14 @@ body{
         margin: 0% auto;
     }
     #cardi {
-        width: 25%;
-        height: 110px;
+        width: 28%;
+        height: 130px;
         padding: 5px;
         position: absolute; left: 80px;
     }
     #cardii{
-        width: 25%;
-        height: 110px;
+        width: 30%;
+        height: 130px;
         position: absolute; left: 200px;
     }
 
@@ -441,7 +447,12 @@ body{
         gap: 15px;
     }
 
+    .inputDiv{
+      margin-top: -45px;
+    }
+
     #cardi2{
         width:34%;
     }
+  
 }
