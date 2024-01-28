@@ -47,7 +47,7 @@ function testLove(){
         imagesDiv.style.display = 'none'
         imagesDivShow.innerHTML = `
             <div class="" id="cardi2">
-                <img src="image/bro timi.JPG" alt="" style="border-radius: 120rem; width:100%; height:110px">
+                <img src="image/bro timi.jpg" alt="" style="border-radius: 120rem; width:100%; height:110px">
             </div>
             <div class="" id="cardi2">
                 <img src="image/bolutife.JPG" alt="" style="border-radius: 120rem; width:100%; height:110px">
