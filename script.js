@@ -53,17 +53,17 @@ function testLove(){
                 <img src="image/bolutife.JPG" alt="" style="border-radius: 120rem; width:100%; height:110px">
             </div>
         `
-        displayLove.innerHTML = `<h3 style="color:white">Hi ${firstInput}, your love percentage is ${myLoveCal}%</h3><br>
-            <h3 style="color:white">My Advice for you two 👇👇👇</h3>
-            <h4 style="color:white">Wow!!!, go and get marry❤️, Let the singles breathe.</h4>
+        displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;"">Hi ${firstInput}, your love percentage is ${myLoveCal}%</h3><br>
+            <h3 style="color:white;font-family: 'Lobster', sans-serif;"">My Advice for you two 👇👇👇</h3>
+            <h4 style="color:white;font-family: 'Lobster', sans-serif;"">Wow!!!, go and get marry❤️, Let the singles breathe.</h4>
         `
     }else if (firstInput !== "" || secondInput !== ""){
         if(loveCal == 1 || loveCal <=30){
             imagesDivShow.style.display='none'
             imagesDiv.style.display = 'block' 
-            displayLove.innerHTML = `<h3 style="color:white">Hi ${firstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white">run!!!! run oo 🏃💨💨, no dey trust Adam?</h4>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;"">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+                <h3 style="color:white;font-family: 'Lobster', sans-serif;"">My Advice for you two 👇👇👇</h3>
+                <h4 style="color:white;font-family: 'Lobster', sans-serif;"">run!!!! run oo 🏃💨💨, no dey trust Adam?</h4>
             `
             songToPlay.pause()
             songToPlay2.pause()
@@ -78,9 +78,9 @@ function testLove(){
             songToPlay3.pause()
             songToPlay2.pause()
             songToPlay4.pause()
-            displayLove.innerHTML = `<h3 style="color:white">Hi ${firstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white">My Advice for you two 👇👇👇</h3>
-                <h4 style="white">Hmm!!! relationship no be your mate o just stay single biko 🤣🤣</h4>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;"">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+                <h3 style="color:white;font-family: 'Lobster', sans-serif;"">My Advice for you two 👇👇👇</h3>
+                <h4 style="white;font-family: 'Lobster', sans-serif;"">Hmm!!! relationship no be your mate o just stay single biko 🤣🤣</h4>
             `
         }else if(loveCal == 41 || loveCal <=50){
             imagesDivShow.style.display='none'
@@ -90,9 +90,9 @@ function testLove(){
             songToPlay3.play()
             songToPlay4.pause()
             songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white">Hi ${firstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white">You fit try love but no dey trust adam o, Sora fobinrin 😂😂</h4>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;"">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+                <h3 style="color:white;font-family: 'Lobster', sans-serif;"">My Advice for you two 👇👇👇</h3>
+                <h4 style="color:white;font-family: 'Lobster', sans-serif;"">You fit try love but no dey trust adam o, Sora fobinrin 😂😂</h4>
             `
         } else if(loveCal == 51 || loveCal <= 70){
             imagesDivShow.style.display='none'
@@ -102,9 +102,9 @@ function testLove(){
             songToPlay2.play()
             songToPlay4.pause()
             songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white">Hi ${firstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white">Idan mhy 🙌🙌🙌, let the singles breathe!</h4>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;"">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+                <h3 style="color:white;font-family: 'Lobster', sans-serif;"">My Advice for you two 👇👇👇</h3>
+                <h4 style="color:white;font-family: 'Lobster', sans-serif;"">Idan mhy 🙌🙌🙌, let the singles breathe!</h4>
             `
         }else if (loveCal == 71 || loveCal <=100){
             imagesDivShow.style.display='none'
@@ -114,9 +114,9 @@ function testLove(){
             songToPlay2.play()
             songToPlay4.pause()
             songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white">Hi ${firstInput}, your love percentage is ${calLove}</h3><br>
-                <h3 style="color:white">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white">Idan nla 🙌🙌🙌, go and get marry 💙, Let the singles breathe.</h4>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;"">Hi ${firstInput}, your love percentage is ${calLove}</h3><br>
+                <h3 style="color:white;font-family: 'Lobster', sans-serif;"">My Advice for you two 👇👇👇</h3>
+                <h4 style="color:white;font-family: 'Lobster', sans-serif;"">Idan nla 🙌🙌🙌, go and get marry 💙, Let the singles breathe.</h4>
             `
         }
     }
