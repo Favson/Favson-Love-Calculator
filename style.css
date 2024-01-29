@@ -433,7 +433,7 @@ body{
         margin: 0% auto;
     }
     #cardi {
-        width: 28%;
+        width: 35%;
         height: 130px;
         padding: 5px;
         position: absolute; left: 80px;
@@ -458,4 +458,27 @@ body{
         width:34%;
     }
   
+}
+
+@media(max-width:876px){
+#cardi {
+    width: 16%;
+    height: 130px;
+    padding: 5px;
+    position: absolute; left: 25%;
+}
+#cardii{
+    width: 16%;
+    height: 130px;
+    position: absolute; left: 50%;
+}
+
+#imagesDivShow{
+    display:flex;
+    margin-left: 20%; 
+    gap: 15px;
+}
+#cardi2{
+  width:34%;
+}
 }
