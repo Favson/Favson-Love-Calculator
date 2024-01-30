@@ -28,11 +28,16 @@
             </div>
             <div id="imagesDivShow"></div>
                         
-            <!-- <div>
-                <img src="image/pexels-sơn-ngọc-19259431.jpg" alt="" width="4%" >
-                <img src="image/female anime.png" alt="" width="5%">
-                <img src="image/male anime.png" alt="" width="5%">
-            </div> -->
+            <div id="imageAvaterDisplay">
+                <h5>Choose Avater</h5>
+                <div style="display: flex;" id="avatarList">
+                    <img src="image/pexels-sơn-ngọc-19259431.jpg" alt="" style="height: 50px; display:none" width="25%" onclick="imageAvater1()" id="imageAvaterDp1">
+                    <img src="image/female anime.png" alt="" width="28%" style="height: 50px; display:none" onclick="imageAvater2()" id="imageAvaterDp2">
+                    <img src="image/male anime.png" alt="" width="28%" style="height: 50px; display:none" onclick="imageAvater3()" id="imageAvaterDp3">
+                    <img src="image/Grey Illustration Couple Phone Wallpaper.png" style="height: 50px; display:none" width="25%" onclick="imageAvater4()" id="imageAvaterDp4" alt="">
+                    <img src="image/wallpaperNew.PNG" alt="" width="25%" style="height: 50px; display:none" onclick="imageAvater5()" id="imageAvaterDp5">
+                </div>
+            </div>
             <div id="imagesDiv">
                 <div class="mx-auto col-1" id="cardi">
                     <img src="image/female anime.png" class="cardiImage" onclick="changeAvater()">
@@ -50,7 +55,7 @@
                 <input type="text" placeholder="💕 Input 💖ers Name 💕 " id="secondInpt" class="p-2 shadow-none border-0">
             </div>
             <div class="col-lg-12 col-sm-12 mx-auto">
-                <button onclick="testLove()" class="text-center px-5 py-3 mt-3 buttonTest" style="background-color:#242418; color:rosybrown">Test Love</button>
+                <button onclick="testLove()" class="text-center px-5 py-3 mt-3 buttonTest" style="background-color:#242418; color:rosybrown">Calculate Love Percentage</button>
             </div>
             <div id="displayLove"></div>
         </div>
