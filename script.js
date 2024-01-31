@@ -28,10 +28,10 @@ function testLove(){
         imagesDiv.style.display = 'none'
         imagesDivShow.innerHTML = `
             <div class="" id="cardi2">
-                <img src="image/favour.jpg" alt="" style="border-radius: 120rem; width:100%; height:110px">
+                <img src="image/favour.jpg" alt="pic" style="border-radius: 120rem; width:100%; height:110px">
             </div>
             <div class="" id="cardi2">
-                <img src="image/tofunmi.jpg" alt="" style="border-radius: 120rem; width:100%; height:110px">
+                <img src="image/tofunmi.jpg" alt="lovepics" style="border-radius: 120rem; width:100%; height:110px">
             </div>
         `
         displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${myLoveCal}%</h3><br>
