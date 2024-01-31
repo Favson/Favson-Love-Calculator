@@ -8,18 +8,20 @@ songToPlay5 = new Audio("audios/timi-dakolo-iyawo-mi.m4a")
 function testLove(){
     let firstInput = (document.getElementById("firstInpt").value).toLowerCase()
     let secondInput = (document.getElementById('secondInpt').value).toLowerCase()
+    let newFirstInput = firstInput.trim()
+    let newSecondInput = secondInput.trim()
     
     let myLoveCal = (Math.random() * (100 - 90) + 90).toFixed(0) 
     let loveCal = Math.round(Math.random()*100)
     let calLove = `${loveCal} %`
     
-    if (firstInput == "" || secondInput ==""){
+    if (newFirstInput == "" || newSecondInput ==""){
         errMsg.style.display = 'block'
         setTimeout(()=>{
             errMsg.style.display = 'none'
         }, 1500);
         
-    }else if ((firstInput == 'jesutofunmi' || firstInput == 'tofunmi' || firstInput == 'bolaji jesutofunmi' || firstInput == 'bolaji tofunmi' || firstInput == 'jesutofunmi bolaji' || firstInput == 'tofunmi bolaji' || firstInput == 'favour adebisi' || firstInput == "favour" || firstInput == 'adebisi favour') && (secondInput == 'tofunmi' ||secondInput == 'favour' || secondInput == 'adebisi favour' || secondInput == 'favour adebisi' ||secondInput=='bolaji jesutofunmi'|| secondInput== 'jesutofunmi' || secondInput == 'jesutofunmi bolaji')){
+    }else if ((newFirstInput == 'jesutofunmi' || newFirstInput == 'tofunmi' || newFirstInput == 'bolaji jesutofunmi' || newFirstInput == 'bolaji tofunmi' || newFirstInput == 'jesutofunmi bolaji' || newFirstInput == 'tofunmi bolaji' || newFirstInput == 'favour adebisi' || newFirstInput == "favour" || newFirstInput == 'adebisi favour') && (newSecondInput == 'tofunmi' ||newSecondInput == 'favour' || newSecondInput == 'adebisi favour' || newSecondInput == 'favour adebisi' ||newSecondInput=='bolaji jesutofunmi'|| newSecondInput== 'jesutofunmi' || newSecondInput == 'jesutofunmi bolaji')){
         songToPlay.pause()
         songToPlay2.pause()
         songToPlay3.pause()
@@ -34,11 +36,11 @@ function testLove(){
                 <img src="image/tofunmi.jpg" alt="lovepics" style="border-radius: 120rem; width:100%; height:110px">
             </div>
         `
-        displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${myLoveCal}%</h3><br>
+        displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
         <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
             <h4 style="color:white;font-family: 'Lobster', sans-serif;">Wow!!!, go and get marry❤️, Let the singles breathe.</h4>
         `
-    }else if((firstInput == 'oluwatimileyin' || firstInput== 'olutimz' || firstInput == 'timileyin' || firstInput == 'boluwatife' || firstInput == 'timi' || firstInput== 'bolu') && (secondInput == 'oluwatimileyin' || secondInput== 'olutimz' || secondInput == 'timileyin' || secondInput == 'boluwatife' || secondInput == 'timi' || secondInput == 'bolu')){
+    }else if((newFirstInput == 'oluwatimileyin' || newFirstInput== 'olutimz' || newFirstInput == 'timileyin' || newFirstInput == 'boluwatife' || newFirstInput == 'timi' || newFirstInput== 'bolu') && (newSecondInput == 'oluwatimileyin' || newSecondInput== 'olutimz' || newSecondInput == 'timileyin' || newSecondInput == 'boluwatife' || newSecondInput == 'timi' || newSecondInput == 'bolu')){
         songToPlay.pause()
         songToPlay2.pause()
         songToPlay3.pause()
@@ -53,15 +55,15 @@ function testLove(){
                 <img src="image/bolutife.JPG" alt="" style="border-radius: 120rem; width:100%; height:110px">
             </div>
         `
-        displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${myLoveCal}%</h3><br>
+        displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
             <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
             <h4 style="color:white;font-family: 'Lobster', sans-serif;">Wow!!!, go and get marry❤️, Let the singles breathe.</h4>
         `
-    }else if (firstInput !== "" || secondInput !== ""){
+    }else if (newFirstInput !== "" || newSecondInput !== ""){
         if(loveCal == 1 || loveCal <=30){
             imagesDivShow.style.display='none'
             imagesDiv.style.display = 'block' 
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
                 <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="color:white;font-family: 'Lobster', sans-serif;">run!!!! run oo 🏃💨💨, no dey trust Adam?</h4>
             `
@@ -78,7 +80,7 @@ function testLove(){
             songToPlay3.pause()
             songToPlay2.pause()
             songToPlay4.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
                 <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="white;font-family: 'Lobster', sans-serif;">Hmm!!! relationship no be your mate o just stay single biko 🤣🤣</h4>
             `
@@ -90,7 +92,7 @@ function testLove(){
             songToPlay3.play()
             songToPlay4.pause()
             songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
                 <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="color:white;font-family: 'Lobster', sans-serif;">You fit try love but no dey trust adam o, Sora fobinrin 😂😂</h4>
             `
@@ -102,7 +104,7 @@ function testLove(){
             songToPlay2.play()
             songToPlay4.pause()
             songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${calLove}</h3>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
                 <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="color:white;font-family: 'Lobster', sans-serif;">Idan mhy 🙌🙌🙌, let the singles breathe!</h4>
             `
@@ -114,7 +116,7 @@ function testLove(){
             songToPlay2.play()
             songToPlay4.pause()
             songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${firstInput}, your love percentage is ${calLove}</h3><br>
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3><br>
                 <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="color:white;font-family: 'Lobster', sans-serif;">Idan nla 🙌🙌🙌, go and get marry 💙, Let the singles breathe.</h4>
             `
