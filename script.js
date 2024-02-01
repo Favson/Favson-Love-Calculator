@@ -38,7 +38,7 @@ function testLove(){
         `
         displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
         <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
-            <h4 style="color:white;font-family: 'Lobster', sans-serif;">Wow!!!, go and get marry❤️, Let the singles breathe.</h4>
+            <h4 style="color:white;font-family: 'Lobster', sans-serif;">You guys really love each other so go and get marry❤️, Let we the singles breathe.</h4>
         `
     }else if((newFirstInput == 'oluwatimileyin' || newFirstInput== 'olutimz' || newFirstInput == 'timileyin' || newFirstInput == 'boluwatife' || newFirstInput == 'timi' || newFirstInput== 'bolu') && (newSecondInput == 'oluwatimileyin' || newSecondInput== 'olutimz' || newSecondInput == 'timileyin' || newSecondInput == 'boluwatife' || newSecondInput == 'timi' || newSecondInput == 'bolu')){
         songToPlay.pause()
