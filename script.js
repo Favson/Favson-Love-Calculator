@@ -127,19 +127,20 @@ function testLove(){
 }
 
 const changeAvater =() => {
-    
-    imageAvaterDisplay.style.display=imageAvaterDisplay.style.display == 'block'?'none':'block';
-    imageAvaterDp1.style.display = 'block'
-    imageAvaterDp2.style.display = 'block'
-    imageAvaterDp3.style.display = 'block'
-    imageAvaterDp4.style.display = 'block'
-    imageAvaterDp5.style.display = 'block'
+    imageAvaterDisplay.style.display= 'block'
+    // imageAvaterDp1.style.display ='block'
+    // imageAvaterDp2.style.display ='block'
+    // imageAvaterDp3.style.display ='block'
+    // imageAvaterDp4.style.display ='block'
+    // imageAvaterDp5.style.display ='block'
     imageAvater1()
     imageAvater2()
     imageAvater3()
     imageAvater4()
     imageAvater5()
- 
+    setTimeout(()=>{
+        imageAvaterDisplay.style.display='none'
+    },10000)
 }
 
 
@@ -147,7 +148,7 @@ function imageAvater1(){
     cardi.innerHTML=`<img src="image/pexels-sơn-ngọc-19259431.jpg" alt="" style="border-radius: 120rem; width:100%; height:120px">`
 }
 
-function imageAvater2(){
+function imageAvater5(){
     cardi.innerHTML=`<img src="image/female anime.png" alt="" style="border-radius: 120rem; width:100%; height:120px">`
 }
 
@@ -159,8 +160,6 @@ function imageAvater4(){
     cardi.innerHTML=`<img src="image/Grey Illustration Couple Phone Wallpaper.png" alt="" style="border-radius: 120rem; width:100%; height:120px">`
 }
 
-function imageAvater5(){
-   
-    cardi.innerHTML=`<img src="image/wallpaperNew.PNG" alt="" style="border-radius: 120rem; width:100%; height:120px">`
-   
+function imageAvater2(){
+    cardi.innerHTML=`<img src="image/wallpaperNew.PNG" alt="" style="border-radius: 120rem; width:100%; height:120px">`  
 }
