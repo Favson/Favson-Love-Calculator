@@ -4,18 +4,6 @@ function updateGMTTime() {
 }
 setInterval(updateGMTTime, 1000);
 
-// function updateGMTTime() {
-//     const options = {
-//         timeZone: 'Africa/Lagos',
-//         hour12: true, // Add this option to display AM/PM
-//     };
-//     const timeDateInNigeria = new Date().toLocaleString('en-ng', options);
-//     dateshow.innerHTML = timeDateInNigeria;
-// }
-
-// setInterval(updateGMTTime, 1000);
-
-
 songToPlay = new Audio("audios/SongD.mp3")
 songToPlay2 = new Audio("audios/Chidinma-Fallen-in-love.m4a")
 songToPlay3 = new Audio("audios/SongX.mp3")

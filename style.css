@@ -431,7 +431,10 @@ body{
 
     #errMsg{
         width: 80%;
+        /* filter: grayscale(); */
     }
+
+  
 
     .buttonTest{
         width: 100%;
