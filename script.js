@@ -1,10 +1,4 @@
-function updateGMTTime() {
-    const timeDateInNigeria = new Date().toLocaleString('en-ng', {timeZone: 'Africa/Lagos', hour12:true});  
-    dateshow.innerHTML=timeDateInNigeria;
-}
-setInterval(updateGMTTime, 1000);
-
-songToPlay = new Audio("audios/SongD.mp3")
+ songToPlay = new Audio("audios/SongD.mp3")
 songToPlay2 = new Audio("audios/Chidinma-Fallen-in-love.m4a")
 songToPlay3 = new Audio("audios/SongX.mp3")
 songToPlay4 = new Audio("audios/funny.mp3")
