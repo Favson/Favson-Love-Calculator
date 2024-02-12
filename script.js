@@ -16,7 +16,7 @@ function testLove(){
     let calLove = `${loveCal} %`
     
     if (newFirstInput == "" || newSecondInput ==""){
-        errMsg.style.display = 'block'
+        errMsg.style.display = 'block';  
         setTimeout(()=>{
             errMsg.style.display = 'none'
         }, 1500);
@@ -28,10 +28,12 @@ function testLove(){
         songToPlay4.pause()
         songToPlay5.play()
         imagesDiv.style.display = 'none'
+        let loader = document.getElementById('cssload-container') 
+        loader.style.display = "block"
         setTimeout(() => {
-            setTimeout(() => {
-                
-            }, 2000);
+        loader.style.display = "none"    
+        }, 1000);
+        setTimeout(() => {
             imagesDivShow.innerHTML = `
                 <div class="" id="cardi2">
                     <img src="image/favour.jpg" alt="pic" style="border-radius: 120rem; width:100%; height:110px">
@@ -40,13 +42,13 @@ function testLove(){
                     <img src="image/tofunmi.jpg" alt="lovepics" style="border-radius: 120rem; width:100%; height:110px">
                 </div>
             `
-        }, 2500);
+        }, 1200);
         setTimeout(() => {
             displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
             <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="color:white;font-family:'Lobster', sans-serif; transition: 5s;">You guys really love each other so go and get marry❤️, Let the singles breathe.</h4>
             `
-        }, 500);
+        }, 1200);
     }else if((newFirstInput == 'oluwatimileyin' || newFirstInput== 'olutimz' || newFirstInput == 'timileyin' || newFirstInput == 'boluwatife' || newFirstInput == 'timi' || newFirstInput== 'bolu') && (newSecondInput == 'oluwatimileyin' || newSecondInput== 'olutimz' || newSecondInput == 'timileyin' || newSecondInput == 'boluwatife' || newSecondInput == 'timi' || newSecondInput == 'bolu')){
         songToPlay.pause()
         songToPlay2.pause()
