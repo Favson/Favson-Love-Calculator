@@ -27,7 +27,9 @@ function testLove(){
         songToPlay2.pause()
         songToPlay3.pause()
         songToPlay4.pause()
-        imagesDiv.style.display = 'none'
+        setTimeout(() => {
+            imagesDiv.style.display = 'none'
+        }, 1000);
         loader.style.display = "block"
         setTimeout(() => {
             loader.style.display = "none"    
@@ -51,15 +53,16 @@ function testLove(){
         songToPlay.pause()
         songToPlay2.pause()
         songToPlay3.pause()
-        songToPlay4.pause()
-        songToPlay5.play()
-        imagesDiv.style.display = 'none'
+        songToPlay4.pause()         
+        setTimeout(() => {
+            imagesDiv.style.display = 'none'
+        }, 1000);
         loader.style.display = "block"
         setTimeout(() => {
             loader.style.display = "none"
         }, 1000);
         setTimeout(() => {
-            
+            songToPlay5.play()
             imagesDivShow.innerHTML = `
                 <div class="" id="cardi2">
                     <img src="image/bro timi.jpg" alt="" style="border-radius: 120rem; width:100%; height:110px">
@@ -77,63 +80,93 @@ function testLove(){
         if(loveCal == 1 || loveCal <=30){
             imagesDivShow.style.display='none'
             imagesDiv.style.display = 'block' 
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white;font-family: 'Lobster', sans-serif;">run!!!! run oo 🏃💨💨, no dey trust Adam?</h4>
-            `
-            songToPlay.pause()
-            songToPlay2.pause()
-            songToPlay3.pause()
-            songToPlay4.play()
-            songToPlay5.pause()
+            loader.style.display='block'
+            setTimeout(() => {
+                loader.style.display='none'
+            }, 1000);
+            setTimeout(() => {
+                displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
+                    <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
+                    <h4 style="color:white;font-family: 'Lobster', sans-serif;">run!!!! run oo 🏃💨💨, no dey trust Adam?</h4>
+                `
+                songToPlay.pause()
+                songToPlay2.pause()
+                songToPlay3.pause()
+                songToPlay4.play()
+                songToPlay5.pause()
+            }, 1200);
         }else if (loveCal == 31 || loveCal <=40){
             imagesDiv.style.display = 'block' 
             imagesDivShow.style.display='none'
-            songToPlay.play()
-            songToPlay5.pause()
-            songToPlay3.pause()
-            songToPlay2.pause()
-            songToPlay4.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
-                <h4 style="white;font-family: 'Lobster', sans-serif;">Hmm!!! relationship no be your mate o just stay single biko 🤣🤣</h4>
-            `
+            loader.style.display='block'
+            setTimeout(() => {
+                loader.style.display='none'
+            }, 1000);
+            setTimeout(() => {
+                songToPlay.play()
+                songToPlay5.pause()
+                songToPlay3.pause()
+                songToPlay2.pause()
+                songToPlay4.pause()
+                displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
+                    <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
+                    <h4 style="white;font-family: 'Lobster', sans-serif;">Hmm!!! relationship no be your mate o just stay single biko 🤣🤣</h4>
+                `               
+            }, 1200);
         }else if(loveCal == 41 || loveCal <=50){
             imagesDivShow.style.display='none'
             imagesDiv.style.display = 'block' 
-            songToPlay.pause()
-            songToPlay2.pause()
-            songToPlay3.play()
-            songToPlay4.pause()
-            songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white;font-family: 'Lobster', sans-serif;">You fit try love but no dey trust adam o, Sora fobinrin 😂😂</h4>
-            `
+            loader.style.display='block'
+            setTimeout(() => {
+                loader.style.display='none'
+            }, 1000);
+            setTimeout(() => {
+                songToPlay.pause()
+                songToPlay2.pause()
+                songToPlay3.play()
+                songToPlay4.pause()
+                songToPlay5.pause()
+                displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
+                    <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
+                    <h4 style="color:white;font-family: 'Lobster', sans-serif;">You fit try love but no dey trust adam o, Sora fobinrin 😂😂</h4>
+                `               
+            }, 1200);
         } else if(loveCal == 51 || loveCal <= 70){
             imagesDivShow.style.display='none'
             imagesDiv.style.display = 'block' 
-            songToPlay.pause()
-            songToPlay3.pause()
-            songToPlay2.play()
-            songToPlay4.pause()
-            songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
-                <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white;font-family: 'Lobster', sans-serif;">Idan mhy 🙌🙌🙌, let the singles breathe!</h4>
-            `
+            loader.style.display='block'
+            setTimeout(() => {
+                loader.style.display='none'                
+            }, 1000);
+            setTimeout(() => {
+                songToPlay.pause()
+                songToPlay3.pause()
+                songToPlay2.play()
+                songToPlay4.pause()
+                songToPlay5.pause()
+                displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3>
+                    <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
+                    <h4 style="color:white;font-family: 'Lobster', sans-serif;">Idan mhy 🙌🙌🙌, let the singles breathe!</h4>
+                `               
+            }, 1200);
         }else if (loveCal == 71 || loveCal <=100){
             imagesDivShow.style.display='none'
             imagesDiv.style.display = 'block' 
-            songToPlay.pause()
-            songToPlay3.pause()
-            songToPlay2.play()
-            songToPlay4.pause()
-            songToPlay5.pause()
-            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3><br>
-                <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
-                <h4 style="color:white;font-family: 'Lobster', sans-serif;">Idan nla 🙌🙌🙌, go and get marry 💙, Let the singles breathe.</h4>
-            `
+            loader.style.display='block'
+            setTimeout(() => {
+                loader.style.display='none'
+            }, 1000);
+            setTimeout(() => {
+                songToPlay.pause()
+                songToPlay3.pause()
+                songToPlay2.play()
+                songToPlay4.pause()
+                songToPlay5.pause()
+                displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${calLove}</h3><br>
+                    <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
+                    <h4 style="color:white;font-family: 'Lobster', sans-serif;">Idan nla 🙌🙌🙌, go and get marry 💙, Let the singles breathe.</h4>
+                `                
+            }, 1200);
         }
     }
     document.getElementById("firstInpt").value = ""
