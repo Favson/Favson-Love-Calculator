@@ -3,6 +3,7 @@ songToPlay2 = new Audio("audios/Chidinma-Fallen-in-love.m4a")
 songToPlay3 = new Audio("audios/SongX.mp3")
 songToPlay4 = new Audio("audios/funny.mp3")
 songToPlay5 = new Audio("audios/timi-dakolo-iyawo-mi.m4a")
+let loader = document.getElementById('cssload-container') 
 
 // console.log(myLoveCal);
 function testLove(){
@@ -27,7 +28,6 @@ function testLove(){
         songToPlay3.pause()
         songToPlay4.pause()
         imagesDiv.style.display = 'none'
-        let loader = document.getElementById('cssload-container') 
         loader.style.display = "block"
         setTimeout(() => {
             loader.style.display = "none"    
@@ -46,7 +46,7 @@ function testLove(){
             <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="color:white;font-family:'Lobster', sans-serif; transition: 5s;">You guys really love each other so go and get marry❤️, Let the singles breathe.</h4>
             `
-        }, 1200);
+        }, 1100);
     }else if((newFirstInput == 'oluwatimileyin' || newFirstInput== 'olutimz' || newFirstInput == 'timileyin' || newFirstInput == 'boluwatife' || newFirstInput == 'timi' || newFirstInput== 'bolu') && (newSecondInput == 'oluwatimileyin' || newSecondInput== 'olutimz' || newSecondInput == 'timileyin' || newSecondInput == 'boluwatife' || newSecondInput == 'timi' || newSecondInput == 'bolu')){
         songToPlay.pause()
         songToPlay2.pause()
@@ -54,18 +54,25 @@ function testLove(){
         songToPlay4.pause()
         songToPlay5.play()
         imagesDiv.style.display = 'none'
-        imagesDivShow.innerHTML = `
-            <div class="" id="cardi2">
-                <img src="image/bro timi.jpg" alt="" style="border-radius: 120rem; width:100%; height:110px">
-            </div>
-            <div class="" id="cardi2">
-                <img src="image/bolutife.JPG" alt="" style="border-radius: 120rem; width:100%; height:110px">
-            </div>
-        `
-        displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
-            <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
-            <h4 style="color:white;font-family: 'Lobster', sans-serif;">Wow!!!, go and get marry❤️, Let the singles breathe.</h4>
-        `
+        loader.style.display = "block"
+        setTimeout(() => {
+            loader.style.display = "none"
+        }, 1000);
+        setTimeout(() => {
+            
+            imagesDivShow.innerHTML = `
+                <div class="" id="cardi2">
+                    <img src="image/bro timi.jpg" alt="" style="border-radius: 120rem; width:100%; height:110px">
+                </div>
+                <div class="" id="cardi2">
+                    <img src="image/bolutife.JPG" alt="" style="border-radius: 120rem; width:100%; height:110px">
+                </div>
+            `
+            displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
+                <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
+                <h4 style="color:white;font-family: 'Lobster', sans-serif;">Wow!!!, go and get marry❤️, Let the singles breathe.</h4>
+            `
+        }, 1100);
     }else if (newFirstInput !== "" || newSecondInput !== ""){
         if(loveCal == 1 || loveCal <=30){
             imagesDivShow.style.display='none'
