@@ -615,6 +615,7 @@ body{
         /* background-size: cover; */
         background-position-y: center;
         background-position-x:center;
+        overflow: hidden;
     }
 
     .lovecalDiv{
