@@ -618,6 +618,15 @@ body{
         overflow: hidden;
     }
 
+    #cssload-container {
+      /* margin: 0 auto; */
+      display: none;
+      margin:0 auto;
+      max-width: 1048px;
+      position: absolute;
+      /* left: 38%; */
+    }
+
     .lovecalDiv{
         line-height: normal;
     }

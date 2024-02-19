@@ -27,6 +27,7 @@ function testLove(){
         songToPlay2.pause()
         songToPlay3.pause()
         songToPlay4.pause()
+        songToPlay5.play()
         setTimeout(() => {
             imagesDiv.style.display = 'none'
         }, 1000);
@@ -35,20 +36,19 @@ function testLove(){
             loader.style.display = "none"    
         }, 1000);
         setTimeout(() => {
-            songToPlay5.play()
             imagesDivShow.innerHTML = `
                 <div class="" id="cardi2">
                     <img src="image/favour.jpg" alt="pic" style="border-radius: 120rem; width:100%; height:110px">
                 </div>
                 <div class="" id="cardi2">
-                    <img src="image/tofunmi.jpg" alt="lovepics" style="border-radius: 120rem; width:100%; height:110px">
+                    <img src="image/tofunmi.jpg" alt="pic" style="border-radius: 120rem; width:100%; height:110px">
                 </div>
             `
             displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
             <h3 style="color:white;font-family: 'Lobster', sans-serif;">My Advice for you two 👇👇👇</h3>
                 <h4 style="color:white;font-family:'Lobster', sans-serif; transition: 5s;">You guys really love each other so go and get marry❤️, Let the singles breathe.</h4>
             `
-        }, 1100);
+        }, 1000);
     }else if((newFirstInput == 'oluwatimileyin' || newFirstInput== 'olutimz' || newFirstInput == 'timileyin' || newFirstInput == 'boluwatife' || newFirstInput == 'timi' || newFirstInput== 'bolu') && (newSecondInput == 'oluwatimileyin' || newSecondInput== 'olutimz' || newSecondInput == 'timileyin' || newSecondInput == 'boluwatife' || newSecondInput == 'timi' || newSecondInput == 'bolu')){
         songToPlay.pause()
         songToPlay2.pause()
@@ -104,7 +104,7 @@ function testLove(){
             }, 1000);
             setTimeout(() => {
                 songToPlay.play()
-                songToPlay5.pause()
+                songToPlay5.pause()  
                 songToPlay3.pause()
                 songToPlay2.pause()
                 songToPlay4.pause()
