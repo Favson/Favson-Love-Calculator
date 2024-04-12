@@ -22,7 +22,7 @@ function testLove(){
             errMsg.style.display = 'none'
         }, 1500);
         
-    }else if ((newFirstInput == 'jesutofunmi' || newFirstInput == 'tofunmi' || newFirstInput == 'bolaji jesutofunmi' || newFirstInput == 'bolaji tofunmi' || newFirstInput == 'jesutofunmi bolaji' || newFirstInput == 'tofunmi bolaji' || newFirstInput == 'favour adebisi' || newFirstInput == "favour" || newFirstInput == 'adebisi favour') && (newSecondInput == 'tofunmi' ||newSecondInput == 'favour' || newSecondInput == 'adebisi favour' || newSecondInput == 'favour adebisi' ||newSecondInput=='bolaji jesutofunmi'|| newSecondInput== 'jesutofunmi' || newSecondInput == 'jesutofunmi bolaji')){
+    }else if ((newFirstInput == 'norish' || newFirstInput == 'praise' || newFirstInput == 'oluwaseun' || newFirstInput == 'mobolaji praise' || newFirstInput == 'mobolaji oluwaseun' || newFirstInput == 'mobolaji nourish'|| newFirstInput == 'mobolaji norish' || newFirstInput == 'nourish' || newFirstInput == 'mobolaji praise oluwaseun' || newFirstInput == 'favour adebisi' || newFirstInput == "favour" || newFirstInput == 'adebisi favour') && (newSecondInput == 'nourish' ||newSecondInput == 'norish' || newSecondInput == 'adebisi favour' || newSecondInput == 'favour adebisi' ||newSecondInput=='favour'|| newSecondInput== 'mobolaji praise' || newSecondInput == 'mobolaji praise oluwaseun' || newSecondInput == 'praise')){
         songToPlay.pause()
         songToPlay2.pause()
         songToPlay3.pause()
@@ -41,7 +41,7 @@ function testLove(){
                     <img src="image/favour.jpg" alt="pic" style="border-radius: 120rem; width:100%; height:110px">
                 </div>
                 <div class="" id="cardi2">
-                    <img src="image/tofunmi.jpg" alt="pic" style="border-radius: 120rem; width:100%; height:110px">
+                    <img src="image/praise edit.jpg" alt="pic" style="border-radius: 120rem; width:100%; height:110px">
                 </div>
             `
             displayLove.innerHTML = `<h3 style="color:white;font-family: 'Lobster', sans-serif;">Hi ${newFirstInput}, your love percentage is ${myLoveCal}%</h3><br>
